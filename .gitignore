@@ -1,7 +1,6 @@
 .docz
 node_modules
 yarn-error.log
-dist
 example/node_modules
 example/fab.js
 example/styles.css
