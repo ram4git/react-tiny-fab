@@ -75,7 +75,11 @@ const Fab = ({
           </li>
         )
     );
-
+  
+    const ulStyle = {};
+    if(isOpen) ulStyle.display = 'none';
+  
+  
   return (
     <ul
       onMouseEnter={enter}
@@ -105,7 +109,7 @@ const Fab = ({
             {text}
           </span>
         )}
-        <ul>{rc()}</ul>
+        <ul style={ulStyle}>{rc()}</ul>
       </li>
     </ul>
   );
