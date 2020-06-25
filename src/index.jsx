@@ -77,7 +77,7 @@ const Fab = ({
     );
   
     const ulStyle = {};
-    if(isOpen) ulStyle.display = 'none';
+    if(!isOpen) ulStyle.display = 'none';
   
   
   return (
