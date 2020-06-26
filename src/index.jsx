@@ -76,11 +76,15 @@ const Fab = ({
         )
     );
   
+    const ulStyle = {};
+    if(!isOpen) ulStyle.display = 'none';
+  
+  
   return (
     <ul
       onMouseEnter={enter}
       onMouseLeave={leave}
-      className={`rtf ${isOpen ? 'open' : 'closed hidden'}`}
+      className={`rtf ${isOpen ? 'open' : 'closed'}`}
       data-testid="fab"
       style={position}
     >
