@@ -79,6 +79,7 @@ const Fab = ({
     const ulStyle = {};
     if(!isOpen) ulStyle.display = 'none';
   
+    console.log(`FAB is ${isOpen ? 'Open' : 'Close'}`)
   
   return (
     <ul
